@@ -5,7 +5,7 @@ A simple R example code demostrating data analysing on [DATA.GOV.TW](http://data
 ## Run
 
 ```
-> ./main.R
+$ ./main.R
 ```
 
 ## Output
