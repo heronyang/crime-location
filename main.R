@@ -12,7 +12,8 @@ run <- function(font) {
 
     # Setup margin
     par(mar = c(4,10,4,4))
-    barplot(table(data$DeptNm), main=title, family=font, las=1, horiz=T)
+    deptNmSorted <- sort(table(data$DeptNm))
+    barplot(deptNmSorted, main=title, family=font, las=1, horiz=T)
 
 }
 
@@ -25,7 +26,7 @@ pdf("output.pdf")
 run(font="CNS1")
 dev.off()
 
-# Save to jpg
+# Save to JPG
 jpeg("output.jpg", width=10, height=6, units='in', res=300)
 run(font="PingFang TC")
 dev.off()

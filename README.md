@@ -1,6 +1,6 @@
 # crime-location
 
-A simple R example code demostrating data analysing on ```http://data.gov.tw/``` data.
+A simple R example code demostrating data analysing on [DATA.GOV.TW](http://data.gov.tw/) data.
 
 ## Run
 
