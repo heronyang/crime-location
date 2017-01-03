@@ -1,3 +1,5 @@
+#!/usr/bin/env Rscript
+
 # Main plotting function
 run <- function(font) {
 
@@ -15,9 +17,15 @@ run <- function(font) {
 }
 
 # Plot on screen
-run(font="PingFang TC")
+# run(font="PingFang TC")
+run(font="CNS1")
 
 # Save to PDF
 pdf("output.pdf")
 run(font="CNS1")
+dev.off()
+
+# Save to jpg
+jpeg("output.jpg", width=10, height=6, units='in', res=300)
+run(font="PingFang TC")
 dev.off()
