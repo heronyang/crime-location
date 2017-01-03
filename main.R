@@ -7,11 +7,11 @@ run <- function(font) {
     dataUrl <- "http://data.moi.gov.tw/MoiOD/System/DownloadFile.aspx?DATA=AB3F3788-E751-4875-A5B8-BF7BD54FD750"
     data <- read.csv(url(dataUrl))
 
-    # Plot
-    title <- "易發生婦幼被害犯罪地點"
-
     # Setup margin
     par(mar = c(4,10,4,4))
+
+    # Plot
+    title <- "易發生婦幼被害犯罪地點"
     deptNmSorted <- sort(table(data$DeptNm))
     barplot(deptNmSorted, main=title, family=font, las=1, horiz=T)
 
